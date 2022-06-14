@@ -1,0 +1,81 @@
+.comment {
+  margin-top: 1.5ren;
+  display: flex;
+  gap: 1rem;
+}
+
+.comment > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.commentBox {
+  flex: 1;
+}
+
+.commentContent {
+  background-color: var(--gray-7);
+  border-radius: 5px;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.author strong {
+  display: block;
+  font-size: 0.8745rem;
+  line-height: 1.6;
+}
+.author time {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-4);
+}
+
+.commentContent button {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-4);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.commentContent button:hover {
+  color: var(--red-5);
+}
+
+.commentContent p {
+  margin: top 1rem;
+  color: var(--gray-3);
+}
+
+.boxButtonComment button {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-4);
+  cursor: pointer;
+  margin: 1.5rem 0;
+
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.boxButtonComment button:hover {
+  color: var(--green-5);
+}
+
+.boxButtonComment button svg {
+  margin-right: 0.5rem;
+}
+
+.boxButtonComment button span::before {
+    content:"\2022";
+    padding: 0 0.25rem;
+}

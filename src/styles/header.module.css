@@ -1,0 +1,22 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.containerheader {
+    background-color: var(--gray-8);
+}
+
+.boxheader {
+    max-width: 400px;
+    margin: auto;
+    padding:1.25rem 0;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 20px;
+}
+
+.boxheader img {
+    max-width:3rem;
+}

@@ -1,0 +1,110 @@
+.post {
+  background-color: var(--gray-8);
+  border-radius: 5px;
+  padding: 0 2rem;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.Header time {
+  color: var(--gray-4);
+}
+
+.boxAvatarPost {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.boxAvatarPost img {
+  width: 3rem;
+  border-radius: 5px;
+  border: 3px solid var(--gray-8);
+  outline: 2px solid var(--green-5);
+}
+
+.content {
+  line-height: 1.6;
+  color: var(--gray-3);
+  margin-top: 1.5rem;
+}
+
+.content p {
+  margin-top: 1rem;
+}
+
+.content a {
+  font-weight: bold;
+  color: var(--green-5);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.content a:hover {
+  color: var(--green-3);
+}
+
+.commentForm {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-6);
+}
+
+.commentForm div {
+    visibility: hidden;
+    max-height: 0 ;
+}
+
+.commentForm:focus-within div {
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm > strong {
+  line-height: 1.6;
+  color: var(--gray-1);
+}
+
+.commentForm textarea {
+  width: 100%;
+  background-color: var(--gray-9);
+  border: 0;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-1);
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.commentForm button[type="submit"] {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--green-5);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  /* transition:0.3s; */
+}
+.commentForm button[type="submit"]:hover {
+    background: var(--green-3);
+    color: var(--gray-7);
+}
+
+.commentForm {
+    margin-top: 1rem;
+}
